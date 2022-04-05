@@ -1,0 +1,15 @@
+security:
+  basic:
+    enabled: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health"
+#  endpoint:
+#    health:
+#      show-details: "ALWAYS"
+
+server:
+  port:  8081
