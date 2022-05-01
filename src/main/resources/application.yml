@@ -3,10 +3,23 @@ security:
     enabled: false
 
 management:
+  info:
+    git:
+      enabled: true
+      mode: full
+    env:
+      enabled: true
   endpoints:
     web:
       exposure:
-        include: "health"
+        include: ["health", "info"]
+#  endpoint:
+#    health:
+#      show-details: "ALWAYS"
+
+info:
+  app:
+    name: @project.name@
 #  endpoint:
 #    health:
 #      show-details: "ALWAYS"
